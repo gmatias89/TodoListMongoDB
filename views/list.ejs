@@ -8,6 +8,7 @@
   <% newListItems.forEach(function(item){ %>
   <form action="/delete" method="POST">
     <div class="item">
+      <!-- Se le agrega un valor para poder acceder al id, y un atributo onchange que permite usar el checkbox como un submit-->
       <input type="checkbox" name="checkbox" value="<%= item._id %>" onchange="this.form.submit()">
       <p><%=  item.name  %></p>
     </div>

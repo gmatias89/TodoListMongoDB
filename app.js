@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://gmatias89-admin:572833mmContra123@cluster0-rc9pe.mongodb.net/todolistDB", {
+mongoose.connect("DATABASE", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
